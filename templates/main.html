@@ -1,18 +1,32 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-    <h2>Main</h2>
-    <form action="/dbs" method="post">
-        <input type = "submit" value="DBS Share Price Prediction">
-    </form>
-        <form action="/chatbot" method="post">
-        <input type = "submit" value="Chatbot">
-    </form>
+        <h2>Welcome to our chatbot</h2>
+
+        <form action="/llama" method="post">
+            <input type="submit" value="LLAMA">
+        </form>
+
+        <form action="/gemini" method="post">
+            <input type="submit" value="GEMINI">
+        </form>
+
+        <form action="/paynow" method="post">
+            <input type="submit" value="Transfer Money">
+        </form>
+
+        <form action="/main" method="post">
+            <input type="submit" value="Main">
+        </form>
     </div>
 </body>
+</html>
+
 
 
 
